@@ -106,7 +106,6 @@ AddToCart.forEach((e) => {
 		};
 		myArray.push(myOb);
 		localStorage.setItem("product", myArray);
-		console.log(myArray, myArray.length);
 		// ------------------Create My Cart ------------------
 		let flx = document.createElement("div");
 		flx.className = "flx";
@@ -140,7 +139,6 @@ AddToCart.forEach((e) => {
 		removeProduct = document.querySelectorAll(".remove-product");
 		removeProduct.forEach((el) => {
 			el.addEventListener("click", () => {
-				console.log(el);
 				el.parentElement.remove(this);
 				myNumCart.textContent = document.querySelectorAll(".flx").length;
 				if (document.querySelector(".cart").textContent == 0) {
@@ -153,9 +151,8 @@ AddToCart.forEach((e) => {
 			});
 
 			let myR = document.querySelectorAll(".flx");
-			console.log(myR);
 		});
-		console.log(document.querySelectorAll(".flx").length);
+
 		//--------------------------------
 	});
 });
@@ -166,7 +163,6 @@ document.querySelectorAll(".liks").forEach((e) => {
 		e.classList.toggle("liksRed");
 		document.querySelector(".wish").textContent =
 			document.querySelectorAll(".liksRed").length;
-		console.log(document.querySelectorAll(".liksRed").length);
 	});
 });
 
@@ -188,7 +184,6 @@ document.querySelector(".Books").addEventListener("click", () => {
 	document.querySelector(".fashion-product").classList.add("hidden-all-pro");
 	document.querySelector(".electro-product").classList.add("hidden-all-pro");
 	document.querySelector(".books-product").classList.remove("hidden-all-pro");
-	console.log(document.querySelector(".books-product"));
 });
 document.querySelector(".Fashion").addEventListener("click", () => {
 	document.querySelector(".books-product").classList.add("hidden-all-pro");
@@ -242,7 +237,6 @@ setInterval(() => {
 	myHeading.textContent = myObjSlider[myCount].title;
 	myPragraph.textContent = myObjSlider[myCount].info;
 	myLinks.textContent = myObjSlider[myCount].link;
-	console.log(myCount);
 }, 5000);
 
 // function SliderImg(){
