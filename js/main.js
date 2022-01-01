@@ -57,7 +57,7 @@ let myhCart = document.createElement("h3");
 let checkout = document.createElement("a");
 checkout.textContent = "checkout";
 checkout.className = "btn";
-checkout.href = "./cart.html";
+checkout.href = "./otherPge/cart.html";
 let checkoutDiv = document.createElement("div");
 checkoutDiv.className = "checkout-div";
 let removeProduct;
@@ -158,7 +158,7 @@ AddToCart.forEach((e) => {
 			});
 
 			let myR = document.querySelectorAll(".flx");
-      console.log(myR);
+			console.log(myR);
 		});
 		console.log(document.querySelectorAll(".flx").length);
 		//--------------------------------
