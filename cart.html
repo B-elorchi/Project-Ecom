@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My store</title>
+		<!-- Css custom file -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<!-- Normalize css file -->
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<!-- Font awseam link -->
+		<link
+			rel="stylesheet"
+			href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css"
+		/>
+		<!-- Icon website -->
+		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<!-- Start header -->
+		<header class="header-F hidden" id="header-F">
+			<div class="header">
+				<div class="container">
+					<div class="top-header">
+						<ul class="first-nav">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About-us</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">FaQ</a></li>
+						</ul>
+						<ul class="second-nav">
+							<li>
+								<select name="lang" id="lang">
+									<option value="English">English</option>
+									<option value="Arabic">Arabic</option>
+								</select>
+							</li>
+							<li>
+								<select name="p" id="p">
+									<option value="Dolar">Dolar</option>
+									<option value="Auro">Euro</option>
+								</select>
+							</li>
+						</ul>
+						<ul class="therd-nav">
+							<li>more nav</li>
+							<li><a href="#"> Delivery</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="header-nav-top hidden">
+			<div class="container">
+				<div class="main-header">
+					<a href="#"
+						><h1 class="logo">Shop <span>E</span>xpress</h1></a
+					>
+					<div class="search-box">
+						<input
+							type="search"
+							class="search-inp"
+							placeholder="Search here ......"
+						/>
+						<i class="fas fa-search"></i>
+					</div>
+					<div class="header-icons">
+						<div class="login" id="login-form">
+							<i class="fas fa-user"></i>
+							<h5>Login</h5>
+						</div>
+						<div class="login" id="Register-form">
+							<i class="fas fa-user-plus"></i>
+							<h5>Register</h5>
+						</div>
+						<div class="login wish-list">
+							<i class="fas fa-heart"></i>
+							<span class="wish">0</span>
+							<h5>Wish List</h5>
+						</div>
+					</div>
+					<div class="shop-card">
+						<span style="font-family: cursive">$0.00</span>
+						<span class="cart">0</span>
+						<i class="fas fa-shopping-cart" style="font-size: 30px"></i>
+						<div class="box-cart" id="cart-add"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- -----------Login------------------ -->
+		<div class="myacount" id="myacount">
+			<form action="GET">
+				<span class="fas fa-close closeF"></span>
+				<input type="text" placeholder="username or email" />
+				<i class="fas fa-user"></i><br /><br />
+				<input type="password" placeholder="password" />
+				<i class="fab fa-expeditedssl"></i>
+				<br /><br />
+				<input type="submit" value="Login" />
+				<a href="reset password" class="a">reset password</a>
+
+				<span id="register-acount" class="a">create acounte</span>
+			</form>
+		</div>
+		<!-- -----------End Login------------------ -->
+		<!-- -----------Register------------------ -->
+		<div class="register" id="register">
+			<form action="GET">
+				<span class="fas fa-close closeF-2"></span>
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="username" /> <br /><br />
+				<input type="text" placeholder="Email" /> <i class="fas fa-envelope"></i
+				><br /><br />
+				<input type="password" placeholder="password" />
+				<i class="fas fa-lock"></i>
+				<br /><br />
+				<input type="password" placeholder="Confirm password" />
+				<i class="fab fa-expeditedssl"></i>
+				<br /><br />
+
+				<div class="gender">
+					<input type="radio" name="gen" id="male" checked />
+					<label for="male">Male</label>
+					<input type="radio" name="gen" id="famle" />
+					<label for="famle">Famle</label>
+				</div>
+				<br /><br />
+				<input type="submit" value="Register" />
+				<span id="login-acount" class="a">Login</span>
+			</form>
+		</div>
+		<!-- -----------End Register------------------ -->
+		<div class="header-munu hidden">
+			<div class="container all-menu">
+				<div class="mega-menuHeader">
+					<a href="#" class="mega-menu col-1 fa fa-list"> All Catégorie </a>
+					<a href="#" class="mega-menu col-2">mega-menu</a>
+					<a href="#" class="mega-menu col-3">mega-menu</a>
+				</div>
+				<div class="contact-blog">
+					<a href="tel:0639096941" class="col-4">
+						<i class="fas fa-phone-volume"></i> 0639096941</a
+					>
+					<a href="#" class="blog">Blogs</a>
+				</div>
+			</div>
+		</div>
+		<!-- End header -->
+		<!-- Start Cart -->
+        <div class="container">
+            <div class="box-flex-cart">
+                <div class="item-flex-cart">
+                            <h2>Image Product</h2>
+                            <h2>Name Product</h2>
+                            <h2>Qnt Product</h2>
+                            <h2>price Product</h2>
+                            <h2>delete product</h2>
+                   
+                </div>
+                <div class="item-flex-cart">
+                            <img src="./image/book-1.png" alt="">
+                            <h3>Name Product</h3>
+                            <input type="number" min="1" step="1" value="3" style="width: 60px; text-align:center;">
+                            <h3>$2800</h3>
+                            <i class="fas fa-trash"></i>
+                </div>
+                <div class="item-flex-cart">
+                            <img src="./image/book-4.png" alt="">
+                            <h3>Name Product</h3>
+                            <input type="number" min="1" step="1" value="3" style="width: 60px; text-align:center;">
+                            <h3>$2800</h3>
+                            <i class="fas fa-trash"></i>
+                </div>
+                <div class="item-flex-cart">
+                            <img src="./img/cloth1.png" alt="">
+                            <h3>Name Product</h3>
+                            <input type="number" min="1" step="1" value="3" style="width: 60px; text-align:center;">
+                            <h3>$2800</h3>
+                            <i class="fas fa-trash"></i>
+                </div>
+                <div class="item-flex-cart">
+                            <img src="./img/product-101.jpg" alt="">
+                            <h3>Name Product</h3>
+                            <input type="number" min="1" step="1" value="3" style="width: 60px; text-align:center;">
+                            <h3>$2800</h3>
+                            <i class="fas fa-trash"></i>
+                </div>
+            </div>
+            <div class="chekout-cart">
+
+            </div>
+        </div>
+		<!-- End Cart -->
+		<!-- Start Footer -->
+		<footer class="footer hidden" id="footer">
+			<div class="container">
+				<div class="footer-section">
+					<div class="footer-box">
+						<h3>About Us</h3>
+						<div class="links">
+							<a href="#">About Us <i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Delivery<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Privacy Policy<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Terms & Conditions<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Custom Links<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Terms & Conditions<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Custom Links<i class="fas fa-long-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="footer-box">
+						<h3>Customer Service</h3>
+						<div class="links">
+							<a href="#">Unlimited Links<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Brands<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Returns<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Contact<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Custom Links<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Contact<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Custom Links<i class="fas fa-long-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="footer-box">
+						<h3>My Account</h3>
+						<div class="links">
+							<a href="#">Newsletter<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Affiliates<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Order History<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">shop now<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">My Account<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Order History<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">shop now<i class="fas fa-long-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="footer-box">
+						<h3>Contact me</h3>
+						<div class="contact">
+							<input type="text" placeholder="Full name" /><br />
+							<input type="text" placeholder="your email" /><br />
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder="your feed back"
+							></textarea
+							><br />
+							<input type="checkbox" name="" id="" />
+							I have read and agree to the <a href="#">Privacy Policy</a>
+							<br />
+							<br />
+							<a href="mailto:dalamamir118@gmail.com" class="send">Send</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+        <footer class="last-footer">
+            <div class="container">
+                <div class="flex-footer">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2022 Made By Elorchi Brahim
+                        </p>
+                    </div>
+                    <div class="footer-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                       <a href="https://github.com/B-elorchi"> <i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="mony">
+                        <h5>we Acepte:</h5>
+                        <img src="./img/payment.png" alt="pyament">
+                    </div>
+                </div>
+            </div>
+        </footer>
+		<!-- End Footer -->
+		<!-- Custom Js File -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
+
+<!-- https://l.facebook.com/l.php?u=https%3A%2F%2Fjavascript.plainenglish.io%2Fhow-to-make-your-first-nft-in-under-10-minutes-4ec38c10eb9%3Ffbclid%3DIwAR2cTn8ogCB613v7lNAxcryVRzetu-IPNoBWctFrSdE3reHWPAwoPZnjllA&h=AT3wz8yzyfudBYtAmt0Mlv7xGPCmeX-yGV-w5NXm_lRCF_dFcOSaIJEKY8VHHpaTSY-gDJRxNGo7XJ_4ZJGxhxcLM0e1oTaI-tko8M9Gm1cNQmBCVbzpCZQ4NNYcDs6rGGQV&__tn__=-UK-R&c[0]=AT1Tj_4kb-928tIyfXPmHS0vjpSScY-mgz_sgZxZVmkqKrr5v35mMBkOnT60hFNhocIFkRgIWAwMjVBMtyMzRtA0q4qRG7t5bFlMYDC2PSQ5WDrnolcOhGvlJ-Bvv3q74fJswz0IJ-z5Ugz6Ejcledx4_LyZkSN7b06F-2QccEHS4Vmj3PsMbWbZ-UiK4u04Ap2CvCi_ZKSp_qBzaBA7cMDT -->

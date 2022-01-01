@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My store</title>
+		<!-- Css custom file -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<!-- Normalize css file -->
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<!-- Font awseam link -->
+		<link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+		<!-- Icon website -->
+		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<!-- Start header -->
+		<header class="header-F hidden" id="header-F">
+			<div class="header">
+				<div class="container">
+					<div class="top-header">
+						<ul class="first-nav">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About-us</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">FaQ</a></li>
+						</ul>
+						<ul class="second-nav">
+							<li>
+								<select name="lang" id="lang">
+									<option value="English">English</option>
+									<option value="Arabic">Arabic</option>
+								</select>
+							</li>
+							<li>
+								<select name="p" id="p">
+									<option value="Dolar">Dolar</option>
+									<option value="Auro">Euro</option>
+								</select>
+							</li>
+						</ul>
+						<ul class="therd-nav">
+							<li><a href="">more nav</a></li>
+							<li><a href="#"> Delivery</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="header-nav-top hidden">
+			<div class="container">
+				<div class="main-header">
+					<a href="#"
+						><h1 class="logo">Shop <span>E</span>xpress</h1></a
+					>
+					<div class="search-box">
+						<input
+							type="search"
+							class="search-inp"
+							placeholder="Search here ......"
+						/>
+						<i class="fas fa-search"></i>
+					</div>
+					<div class="header-icons">
+						<div class="login" id="login-form">
+							<i class="fas fa-user"></i>
+							<h5>Login</h5>
+						</div>
+						<div class="login" id="Register-form">
+							<i class="fas fa-user-plus"></i>
+							<h5>Register</h5>
+						</div>
+						<div class="login wish-list">
+							<i class="fas fa-heart"></i>
+							<span class="wish">0</span>
+							<h5>Wish List</h5>
+						</div>
+					</div>
+					<div class="shop-card">
+						<span style="font-family: cursive">$0.00</span>
+						<span class="cart">0</span>
+						<i class="fas fa-shopping-cart" style="font-size: 30px"></i>
+						<div class="box-cart" id="cart-add"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- -----------Login------------------ -->
+		<div class="myacount" id="myacount">
+			<form action="GET">
+				<span class="fas fa-close closeF"></span>
+				<input type="text" placeholder="username or email" />
+				<i class="fas fa-user"></i><br /><br />
+				<input type="password" placeholder="password" />
+				<i class="fab fa-expeditedssl"></i>
+				<br /><br />
+				<input type="submit" value="Login" />
+				<a href="reset password" class="a">reset password</a>
+
+				<span id="register-acount" class="a">create acounte</span>
+			</form>
+		</div>
+		<!-- -----------End Login------------------ -->
+		<!-- -----------Register------------------ -->
+		<div class="register" id="register">
+			<form action="GET">
+				<span class="fas fa-close closeF-2"></span>
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="username" /> <br /><br />
+				<input type="text" placeholder="Email" /> <i class="fas fa-envelope"></i
+				><br /><br />
+				<input type="password" placeholder="password" />
+				<i class="fas fa-lock"></i>
+				<br /><br />
+				<input type="password" placeholder="Confirm password" />
+				<i class="fab fa-expeditedssl"></i>
+				<br /><br />
+
+				<div class="gender">
+					<input type="radio" name="gen" id="male" checked />
+					<label for="male">Male</label>
+					<input type="radio" name="gen" id="famle" />
+					<label for="famle">Famle</label>
+				</div>
+				<br /><br />
+				<input type="submit" value="Register" />
+				<span id="login-acount" class="a">Login</span>
+			</form>
+		</div>
+		<!-- -----------End Register------------------ -->
+		<div class="header-munu hidden">
+			<div class="container all-menu">
+				<div class="mega-menuHeader">
+					<a href="#" class="mega-menu col-1 fa fa-list"> All Catégorie </a>
+					<a href="#" class="mega-menu col-2">mega-menu</a>
+					<a href="#" class="mega-menu col-3">mega-menu</a>
+				</div>
+				<div class="contact-blog">
+					<a href="tel:0639096941" class="col-4">
+						<i class="fas fa-phone-volume"></i> 0639096941</a
+					>
+					<a href="#" class="blog">Blogs</a>
+				</div>
+			</div>
+		</div>
+		<!-- End header -->
+		<!-- Start main -->
+		<div class="container hidden">
+			<main class="main-section">
+				<div class="slider-image">
+					<div class="info-box">
+						<img src="./img/s1.png" alt="" />
+						<div class="box">
+							<h3>Shop now</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+								labore officiis sint iste et
+							</p>
+							<a href="#" class="shop-now"
+								>Shop Now <i class="fas fa-long-arrow-right"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div class="product-silder">
+					<div class="box">
+						<img src="./img/b1.png" alt="" />
+						<div class="box-info-product">
+							<a href="#">Watch</a>
+							<h4>Lorem ipsum dolor sit amet consectetur?</h4>
+						</div>
+					</div>
+					<div class="box">
+						<img src="./img/b2.png" alt="" />
+						<div class="box-info-product">
+							<a href="#">Watch</a>
+							<h4>Lorem ipsum dolor sit amet consectetur?</h4>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- Start Main Footer -->
+		<div class="main-footer hidden">
+			<div class="container">
+				<div class="box-main">
+					<div class="info-main">
+						<i class="fas fa-shipping-fast"></i>
+						<div class="info-o">
+							<h5>Free Shipping</h5>
+							<p>Free delivery over $100</p>
+						</div>
+					</div>
+					<div class="info-main">
+						<i class="fas fa-reply"></i>
+						<div class="info-o">
+							<h5>Free Returns</h5>
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+						</div>
+					</div>
+					<div class="info-main">
+						<i class="fas fa-shield-alt"></i>
+						<div class="info-o">
+							<h5>Secure Shopping</h5>
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+						</div>
+					</div>
+					<div class="info-main">
+						<i class="fas fa-cube"></i>
+						<div class="info-o">
+							<h5>Unlimited Blocks</h5>
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Main Footer -->
+		<!-- Start Section about and Catégorie -->
+		<section class="section hidden" id="section">
+			<div class="container">
+				<div class="info-box">
+					<h1 class="hover-o">Why buy from us?</h1>
+					<p>
+						Journal has been the best selling and most loved Opencart theme
+						since first launch in 2013. Tried and tested by over 20K people,
+						Journal is the best Opencart theme framework on the market today.
+						<a href="#">Learn more</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<div class="categorie hidden">
+			<div class="box-categorie">
+				<button class="top-cat">Top Products</button>
+			</div>
+		</div>
+		<div class="categorie-item container hidden">
+			<div class="flex-box">
+				<div class="item-box">
+					<a href="#" class="link">
+						<img src="./img/elec.jpg" alt="" />
+					</a>
+					<button class="btn">Electronique</button>
+				</div>
+				<div class="item-box">
+					<a href="#" class="link">
+						<img src="./img/food.jpg" alt="" />
+					</a>
+					<button class="btn">Foods</button>
+				</div>
+				<div class="item-box">
+					<a href="#" class="link">
+						<img src="./img/baby.jpg" alt="" />
+					</a>
+					<button class="btn">Baby&Kids</button>
+				</div>
+				<div class="item-box">
+					<a href="#" class="link">
+						<img src="./img/fashion.jpg" alt="" />
+					</a>
+					<button class="btn">Fashtion</button>
+				</div>
+			</div>
+		</div>
+		<!-- End Section about and Catégorie -->
+		<!-- Start Section Product -->
+		<section class="section hidden" id="section">
+			<div class="container">
+				<div class="info-box">
+					<h1 class="hover-o">Fashtion gap gap</h1>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Repudiandae quos sit nemo, doloremque corporis numquam ipsum rem
+						laboriosam expedita praesentium iusto, quod autem iure non,
+						provident sed culpa reiciendis! Ducimus. <a href="#">Learn more</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<div class="categorie hidden">
+			<div class="box-categorie">
+				<button class="top-cat top-product">Top Cateorie</button>
+				<button class="btn Elctro">Electronique</button>
+				<button class="btn Books">Books</button>
+				<button class="btn Fashion">Fashtion</button>
+			</div>
+		</div>
+		<div class="product-box hidden top-pro">
+			<div class="container hidden grid">
+				<div class="item-info">
+					<img src="./img/phone1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<div class="item-info">
+					<img src="./img/cloth1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+
+							<input type="number" value="1" min="1" step="1" />
+
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/cloth2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/shirt3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/shoe2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/watch1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/watch4.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+			</div>
+		</div>
+		<!-- End Section Product -->
+		<!-- -----------Start Product--------- -->
+		<div class="product-box hidden hidden-all-pro electro-product">
+			<div class="container hidden grid">
+				<div class="item-info">
+					<img src="./img/phone1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<div class="item-info">
+					<img src="./img/watch2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<span class="a-plus">
+								<span>1</span>
+								<i class="fa fa-plus"></i>
+							</span>
+							<i class="fa fa-heart"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/smartphone.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./img/cat-2.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/product-1.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/product-5.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/product-6.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/watch3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/headphone1.jpeg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/iphone2.jpeg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/headphone7.jpeg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/phone2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/headphone8.jpeg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/watch1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/watch4.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-72%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ------------Start Product Fashion------- -->
+		<div class="product-box hidden hidden-all-pro fashion-product">
+			<div class="container hidden grid">
+				<div class="item-info">
+					<img src="./img/shirt1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/shirt2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<span class="a-plus">
+								<span>1</span>
+								<i class="fa fa-plus"></i>
+							</span>
+							<i class="fa fa-heart"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/shirt3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/product-17.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+
+				<!-- ----- -->
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/product-18.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/product-90.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/product-110.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/product-101.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/shirt4.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/shoe1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/shoe2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/shoe3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/shoe4.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/shoe5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/product2.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/product7.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/product13.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/promo2.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/promo4.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/product6.jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<div class="item-info">
+					<img src="./img/cloth4.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/cloth3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/cloth2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./img/cloth1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-40%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ------------End Product------- -->
+		<!-- ------------Start Product Books ------- -->
+		<div class="product-box hidden hidden-all-pro books-product">
+			<div class="container hidden grid">
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-4.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-6.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-7.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-8.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-9.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-10.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ----- -->
+				<!-- --- -->
+				<div class="item-info">
+					<img src="./image/book-1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-50%</span>
+						<div class="price">
+							<span class="old-price">$200</span>
+							<span class="new-price">$100</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ------------End Product books------- -->
+		<!-- End main -->
+
+		<!-- Start Riview and Blogs -->
+		<section class="section hidden" id="section">
+			<div class="container">
+				<div class="info-box">
+					<h1 class="hover-o">From our Blog</h1>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Repudiandae quos sit nemo, doloremque corporis numquam ipsum rem
+						laboriosam expedita praesentium iusto, quod autem iure non,
+						provident sed culpa reiciendis! Ducimus. <a href="#">Learn more</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<div class="blogs hidden">
+			<div class="container">
+				<div class="blogs-box">
+					<div class="info-b">
+						<img src="./image/blog-1.jpg" alt="" />
+						<div class="riview-info">
+							<h3>From our Blog</h3>
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Provident dicta eius aperiam. Sunt nesciunt voluptatum
+								perspiciatis doloremque, id porro dicta quidem corrupti. Iure
+								quam consequatur voluptatibus placeat tenetur voluptatem iusto.
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+							</p>
+						</div>
+					</div>
+					<div class="info-b">
+						<img src="./image/blog-2.jpg" alt="" />
+						<div class="riview-info">
+							<h3>From our Blog</h3>
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Provident dicta eius aperiam. Sunt nesciunt voluptatum
+								perspiciatis doloremque, id porro dicta quidem corrupti. Iure
+								quam consequatur voluptatibus placeat tenetur voluptatem iusto.
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+							</p>
+						</div>
+					</div>
+					<div class="info-b">
+						<img src="./image/blog-3.jpg" alt="" />
+						<div class="riview-info">
+							<h3>From our Blog</h3>
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Provident dicta eius aperiam. Sunt nesciunt voluptatum
+								perspiciatis doloremque, id porro dicta quidem corrupti. Iure
+								quam consequatur voluptatibus placeat tenetur voluptatem iusto.
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- End Riview and Blogs -->
+		<!-- Start Brand -->
+		<section class="section hidden" id="section">
+			<div class="container">
+				<div class="info-box">
+					<h1 class="hover-o">Shop by Brand</h1>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Repudiandae quos sit nemo, doloremque corporis numquam ipsum rem
+						laboriosam expedita praesentium iusto, quod autem iure non,
+						provident sed culpa reiciendis! Ducimus. <a href="#">Learn more</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<div class="brand hidden">
+			<div class="container">
+				<div class="brand-box">
+					<div class="brand-info">
+						<img src="./image/FC-fashion.jpg" alt="" />
+						<h5>FC-fashion</h5>
+					</div>
+					<div class="brand-info">
+						<img src="./image/awesome.jpg" alt="" />
+						<h5>awesome</h5>
+					</div>
+					<div class="brand-info">
+						<img src="./image/sony.jpg" alt="" />
+						<h5>Sony</h5>
+					</div>
+					<div class="brand-info">
+						<img src="./image/htc.jpg" alt="" />
+						<h5>Htc</h5>
+					</div>
+					<div class="brand-info">
+						<img src="./image/olivia.jpg" alt="" />
+						<h5>olivia</h5>
+					</div>
+					<div class="brand-info">
+						<img src="./image/superbrand.jpg" alt="" />
+						<h5>superbrand</h5>
+					</div>
+					<div class="brand-info">
+						<img src="./image/fashion-.jpg" alt="" />
+						<h5>NY fshions</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Brand -->
+		<section class="section hidden" id="section">
+			<div class="container">
+				<div class="info-box">
+					<h1 class="hover-o">What are people saying about us</h1>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Repudiandae quos sit nemo, doloremque corporis numquam ipsum rem
+						laboriosam expedita praesentium iusto, quod autem iure non,
+						provident sed culpa reiciendis! Ducimus. <a href="#">Learn more</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<article class="article hidden">
+			<div class="container">
+				<div class="about-we">
+					<div class="info-we">
+						<div class="icon">
+							<i class="fas fa-quote-left"></i>
+							<i class="fas fa-quote-right"></i>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+							voluptates quibusdam, cupiditate incidunt doloribus nisi commodi
+							iste debitis laboriosam eligendi reiciendis! Nihil sequi animi
+							facilis molestiae repellendus eos ratione doloremque.
+						</p>
+
+						<h3>"Elorchi Brahim"</h3>
+					</div>
+					<div class="info-we">
+						<div class="icon">
+							<i class="fas fa-quote-left"></i>
+							<i class="fas fa-quote-right"></i>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+							voluptates quibusdam, cupiditate incidunt doloribus nisi commodi
+							iste debitis laboriosam eligendi reiciendis! Nihil sequi animi
+							facilis molestiae repellendus eos ratione doloremque.
+						</p>
+
+						<h3>"Elorchi Brahim"</h3>
+					</div>
+					<div class="info-we">
+						<div class="icon">
+							<i class="fas fa-quote-left"></i>
+							<i class="fas fa-quote-right"></i>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+							voluptates quibusdam, cupiditate incidunt doloribus nisi commodi
+							iste debitis laboriosam eligendi reiciendis! Nihil sequi animi
+							facilis molestiae repellendus eos ratione doloremque.
+						</p>
+
+						<h3>"Elorchi Brahim"</h3>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!-- Start Footer -->
+		<footer class="footer hidden" id="footer">
+			<div class="container">
+				<div class="footer-section">
+					<div class="footer-box">
+						<h3>About Us</h3>
+						<div class="links">
+							<a href="#">About Us <i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Delivery<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Privacy Policy<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Terms & Conditions<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Custom Links<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Terms & Conditions<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Custom Links<i class="fas fa-long-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="footer-box">
+						<h3>Customer Service</h3>
+						<div class="links">
+							<a href="#">Unlimited Links<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Brands<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Returns<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Contact<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Custom Links<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Contact<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Custom Links<i class="fas fa-long-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="footer-box">
+						<h3>My Account</h3>
+						<div class="links">
+							<a href="#">Newsletter<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Affiliates<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Order History<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">shop now<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">My Account<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">Order History<i class="fas fa-long-arrow-right"></i
+							></a>
+							<a href="#">shop now<i class="fas fa-long-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="footer-box">
+						<h3>Contact me</h3>
+						<div class="contact">
+							<input type="text" placeholder="Full name" /><br />
+							<input type="text" placeholder="your email" /><br />
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder="your feed back"
+							></textarea
+							><br />
+							<input type="checkbox" name="" id="" />
+							I have read and agree to the <a href="#">Privacy Policy</a>
+							<br />
+							<br />
+							<a href="mailto:dalamamir118@gmail.com" class="send">Send</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+        <footer class="last-footer">
+            <div class="container">
+                <div class="flex-footer">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2022 Made By Elorchi Brahim
+                        </p>
+                    </div>
+                    <div class="footer-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                       <a href="https://github.com/B-elorchi"> <i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="mony">
+                        <h5>we Acepte:</h5>
+                        <img src="./img/payment.png" alt="pyament">
+                    </div>
+                </div>
+            </div>
+        </footer>
+		<!-- End Footer -->
+		<!-- Custom Js File -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
