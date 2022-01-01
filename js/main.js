@@ -73,12 +73,7 @@ AddToCart.forEach((e) => {
 	e.addEventListener("click", () => {
 		// Start Check Items in Local Storage
 		myItemsStorage = localStorage.getItem("product");
-		if (myItemsStorage == "") {
-			console.log("Local Storage is Empty");
-		} else {
-			var ap = localStorage.getItem("product");
-			console.log(`Note Empty :${ap.length}`);
-		}
+
 		// End Check Items in Local Storage
 		//Style Btn Add cart after Click
 		e.textContent = "In Cart";
