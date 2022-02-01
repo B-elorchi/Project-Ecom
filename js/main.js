@@ -1,4 +1,36 @@
+setTimeout(() => {
+	// Create OverLay page
+	let myOverLay = document.createElement("div");
+	myOverLay.className = "over-lay";
+	document.body.appendChild(myOverLay);
+	// Create ads
+	let myPupsAds = document.createElement("div");
+	myPupsAds.className = "popus-ads";
+	let myHeading = document.createElement("h3");
+	myHeading.textContent = "Get Discount -40% for first order";
+	myHeading.className = "popus-heding";
+	myPupsAds.appendChild(myHeading);
+	let popusInput = document.createElement("input");
+	popusInput.type = "email";
+	popusInput.className = "popus-input";
+	popusInput.placeholder = "your amail";
+	myPupsAds.appendChild(popusInput);
+	let buttonPopus = document.createElement("button");
+	buttonPopus.textContent = "Send";
+	myPupsAds.appendChild(buttonPopus);
+	// Create close button
+	let closeButton = document.createElement("i");
+	closeButton.className = "fas fa-close";
+	closeButton.addEventListener("click", (e) => {
+		e.target.parentNode.remove();
+		document.querySelector(".over-lay").remove();
+	});
+	myPupsAds.appendChild(closeButton);
+	document.body.appendChild(myPupsAds);
+}, 10000);
+
 // Satrt Login And Register Acount
+console.log(document.querySelector(".fa-arrow-right"));
 let loginForm = document.querySelector("#login-form");
 loginForm.addEventListener("click", () => {
 	document.querySelector("#register").classList.remove("active");
@@ -49,6 +81,7 @@ lgAcount.addEventListener("click", () => {
 	document.querySelector("#myacount").classList.toggle("active");
 });
 // End Login And Register Acount
+
 let AddToCart = document.querySelectorAll(".add");
 let myArray = [];
 let myvar = document.querySelector("#cart-add");
@@ -68,7 +101,68 @@ if (document.querySelector(".cart").textContent == 0) {
 	myhCart.style.textAlign = "center";
 	myvar.appendChild(myhCart);
 }
+function AddToCartFun() {
+	// ------------------Create My Cart ------------------
+	let flx = document.createElement("div");
+	flx.className = "flx";
+	let myimg = document.createElement("img");
+	let myH = document.createElement("h3");
+	let prices = document.createElement("h4");
+	prices.className = "price-product";
+	let QNts = document.createElement("h4");
+	let trach = document.createElement("i");
 
+	trach.className = "fa fa-trash remove-product";
+	if (myArray !== "") {
+		for (let i = 0; i < myArray.length; i++) {
+			myimg.src = myArray[i].image;
+			myH.textContent = myArray[i].name;
+			prices.textContent = myArray[i].price;
+			QNts.textContent = myArray[i].Qnt;
+			flx.appendChild(myimg);
+			flx.appendChild(myH);
+			flx.appendChild(prices);
+			flx.appendChild(QNts);
+			flx.appendChild(trach);
+			myvar.appendChild(flx);
+			//myArray[i].remove();
+		}
+	}
+	// ------------------ ------------------
+	checkoutDiv.appendChild(checkout);
+	myvar.appendChild(checkoutDiv);
+	myNumCart.textContent = document.querySelectorAll(".flx").length;
+	removeProduct = document.querySelectorAll(".remove-product");
+	removeProduct.forEach((el) => {
+		el.addEventListener("click", () => {
+			el.parentElement.remove(this);
+			myNumCart.textContent = document.querySelectorAll(".flx").length;
+			if (document.querySelector(".cart").textContent == 0) {
+				if (document.querySelector(".remove") == null) {
+					myvar.appendChild(myhCart);
+					myvar.removeChild(checkoutDiv);
+				}
+			}
+			//
+		});
+
+		let myR = document.querySelectorAll(".flx");
+	});
+
+	//--------------------------------
+}
+function adding(e) {
+	e.textContent = "In Cart";
+	e.disabled = true;
+	e.style.backgroundColor = "white";
+	e.style.color = "var(--main-color)";
+	//------------------------------
+	if (document.querySelector(".cart").textContent !== 0) {
+		if (document.querySelector(".remove") !== null) {
+			myvar.removeChild(myhCart);
+		}
+	}
+}
 AddToCart.forEach((e) => {
 	e.addEventListener("click", () => {
 		// Start Check Items in Local Storage
@@ -76,16 +170,7 @@ AddToCart.forEach((e) => {
 
 		// End Check Items in Local Storage
 		//Style Btn Add cart after Click
-		e.textContent = "In Cart";
-		e.disabled = true;
-		e.style.backgroundColor = "white";
-		e.style.color = "var(--main-color)";
-		//------------------------------
-		if (document.querySelector(".cart").textContent !== 0) {
-			if (document.querySelector(".remove") !== null) {
-				myvar.removeChild(myhCart);
-			}
-		}
+		adding(e);
 
 		let b = e.parentElement.parentElement.parentElement.firstElementChild;
 		let nameProduct = e.parentElement.parentElement.firstElementChild;
@@ -107,52 +192,7 @@ AddToCart.forEach((e) => {
 		myArray.push(myOb);
 		localStorage.setItem("product", myArray);
 		// ------------------Create My Cart ------------------
-		let flx = document.createElement("div");
-		flx.className = "flx";
-		let myimg = document.createElement("img");
-		let myH = document.createElement("h3");
-		let prices = document.createElement("h4");
-		prices.className = "price-product";
-		let QNts = document.createElement("h4");
-		let trach = document.createElement("i");
-
-		trach.className = "fa fa-trash remove-product";
-		if (myArray !== "") {
-			for (let i = 0; i < myArray.length; i++) {
-				myimg.src = myArray[i].image;
-				myH.textContent = myArray[i].name;
-				prices.textContent = myArray[i].price;
-				QNts.textContent = myArray[i].Qnt;
-				flx.appendChild(myimg);
-				flx.appendChild(myH);
-				flx.appendChild(prices);
-				flx.appendChild(QNts);
-				flx.appendChild(trach);
-				myvar.appendChild(flx);
-				//myArray[i].remove();
-			}
-		}
-		// ------------------ ------------------
-		checkoutDiv.appendChild(checkout);
-		myvar.appendChild(checkoutDiv);
-		myNumCart.textContent = document.querySelectorAll(".flx").length;
-		removeProduct = document.querySelectorAll(".remove-product");
-		removeProduct.forEach((el) => {
-			el.addEventListener("click", () => {
-				el.parentElement.remove(this);
-				myNumCart.textContent = document.querySelectorAll(".flx").length;
-				if (document.querySelector(".cart").textContent == 0) {
-					if (document.querySelector(".remove") == null) {
-						myvar.appendChild(myhCart);
-						myvar.removeChild(checkoutDiv);
-					}
-				}
-				//
-			});
-
-			let myR = document.querySelectorAll(".flx");
-		});
-
+		AddToCartFun();
 		//--------------------------------
 	});
 });
@@ -243,3 +283,110 @@ setInterval(() => {
 
 // }
 // End Slider Top
+
+let myArrayTwo = [];
+let myObTwo;
+let myProduct = document.querySelectorAll(".cat-col-2 .product-list");
+console.log(myProduct);
+myProduct.forEach((e) => {});
+
+console.log(myArrayTwo);
+
+document.querySelectorAll(".cart-Two").forEach((e) => {
+	e.addEventListener("click", () => {
+		let el = e.parentElement.parentElement;
+		let imageT = el.firstElementChild;
+		let nameT = imageT.nextElementSibling.firstElementChild.textContent;
+		let priceT = imageT.nextElementSibling.nextElementSibling.firstElementChild;
+		let QNtsT = priceT.nextElementSibling.nextElementSibling.value;
+		myObTwo = {
+			image: imageT.src,
+			name: nameT,
+			price: priceT.textContent,
+			Qnt: QNtsT,
+		};
+		myArray.push(myObTwo);
+		console.log(myArray);
+		AddToCartFun();
+	});
+});
+
+window.onscroll = () => {
+	if (window.scrollY >= 1800) {
+		document.querySelector(".to-top").style.display = "block";
+	} else {
+		document.querySelector(".to-top").style.display = "none";
+	}
+};
+
+// ------------------------------------------
+
+//  TESTIMONIALS CAROUSEL HOOK
+var cards = $("#card-slider .slider-item").toArray();
+
+startAnim(cards);
+
+function startAnim(array) {
+	if (array.length >= 4) {
+		TweenMax.fromTo(
+			array[0],
+			0.5,
+			{ x: 0, y: 0, opacity: 0.75 },
+			{
+				x: 0,
+				y: -120,
+				opacity: 0,
+				zIndex: 0,
+				delay: 0.03,
+				ease: Cubic.easeInOut,
+				onComplete: sortArray(array),
+			}
+		);
+
+		TweenMax.fromTo(
+			array[1],
+			0.5,
+			{ x: 79, y: 125, opacity: 1, zIndex: 1 },
+			{
+				x: 0,
+				y: 0,
+				opacity: 0.75,
+				zIndex: 0,
+				boxShadow: "-5px 8px 8px 0 rgba(82,89,129,0.05)",
+				ease: Cubic.easeInOut,
+			}
+		);
+
+		TweenMax.to(array[2], 0.5, {
+			bezier: [
+				{ x: 0, y: 250 },
+				{ x: 65, y: 200 },
+				{ x: 79, y: 125 },
+			],
+			boxShadow: "-5px 8px 8px 0 rgba(82,89,129,0.05)",
+			zIndex: 1,
+			opacity: 1,
+			ease: Cubic.easeInOut,
+		});
+
+		TweenMax.fromTo(
+			array[3],
+			0.5,
+			{ x: 0, y: 400, opacity: 0, zIndex: 0 },
+			{ x: 0, y: 250, opacity: 0.75, zIndex: 0, ease: Cubic.easeInOut }
+		);
+	} else {
+		$("#card-slider").append(
+			"<p>Sorry, carousel should contain more than 3 slides</p>"
+		);
+	}
+}
+
+function sortArray(array) {
+	clearTimeout(delay);
+	var delay = setTimeout(function () {
+		var firstElem = array.shift();
+		array.push(firstElem);
+		return startAnim(array);
+	}, 3000);
+}

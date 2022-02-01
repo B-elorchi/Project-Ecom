@@ -5,24 +5,31 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My store</title>
-		<!-- Css custom file -->
-		<link rel="stylesheet" href="./css/style.css" />
 		<!-- Normalize css file -->
 		<link rel="stylesheet" href="./css/normalize.css" />
+		<!-- Css custom file -->
+		<link rel="stylesheet" href="./css/style.css" />
+		
+
 		<!-- Font awseam link -->
 		<link
 			rel="stylesheet"
-			href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
 		<!-- Icon website -->
 		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
+		<a href="#top" class="to-top"><i class="fas fa-angle-double-up"></i></a>
 		<!-- Start header -->
 		<header class="header-F hidden" id="header-F">
 			<div class="header">
 				<div class="container">
-					<div class="top-header">
+					<div class="top-header" id="top">
 						<ul class="first-nav">
 							<li><a href="#">Home</a></li>
 							<li><a href="#">About-us</a></li>
@@ -142,7 +149,8 @@
 				</div>
 				<div class="contact-blog">
 					<a href="tel:0639096941" class="col-4">
-						<i class="fas fa-phone-volume"></i>0639096941</a>
+						<i class="fab fa-facebook"></i>0639096941</a
+					>
 					<a href="#" class="blog">Blogs</a>
 				</div>
 			</div>
@@ -160,9 +168,8 @@
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
 								labore officiis sint iste et
 							</p>
-							<a href="#" class="shop-now"
-								>Shop Now <i class="fas fa-long-arrow-right"></i
-							></a>
+							<a href="#" class="shop-now">Shop Now </a>
+							<i class="fas fa-arrow-right"></i>
 						</div>
 					</div>
 				</div>
@@ -237,7 +244,7 @@
 		</section>
 		<div class="categorie hidden">
 			<div class="box-categorie">
-				<button class="top-cat">Top Products</button>
+				<button class="top-cat">Top Catégorie</button>
 			</div>
 		</div>
 		<div class="categorie-item container hidden">
@@ -285,7 +292,7 @@
 		</section>
 		<div class="categorie hidden">
 			<div class="box-categorie">
-				<button class="top-cat top-product">Top Cateorie</button>
+				<button class="top-cat top-product">Top Products</button>
 				<button class="btn Elctro">Electronique</button>
 				<button class="btn Books">Books</button>
 				<button class="btn Fashion">Fashtion</button>
@@ -294,7 +301,7 @@
 		<div class="product-box hidden top-pro">
 			<div class="container hidden grid">
 				<div class="item-info">
-					<img src="./img/phone1.png" alt="" />
+					<img src="./image/book-2.png" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<span class="sale">-85%</span>
@@ -379,7 +386,7 @@
 				</div>
 				<!-- ---- -->
 				<div class="item-info">
-					<img src="./img/phone2.png" alt="" />
+					<img src="./image/book-1.png" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<span class="sale">-85%</span>
@@ -2243,6 +2250,346 @@
 		<!-- ------------End Product books------- -->
 		<!-- End main -->
 
+		<!-- -------Start SEction Product And Ctégorie------------ -->
+		<div class="product-categorie hidden">
+			<div class="cat-col-1">
+				<h3>Catégorie</h3>
+				<h4>Vêtements & Chaussures</h4>
+				<ul class="colm-1">
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+				</ul>
+				<hr />
+				<h4>Genre</h4>
+				<div>
+					<input type="checkbox" id="homme" /> <label for="homme">Homme</label>
+				</div>
+				<!-- -- -->
+				<div>
+					<input type="checkbox" id="bebe" /> <label for="bebe">Bébé</label>
+				</div>
+				<!-- -- -->
+				<div>
+					<input type="checkbox" id="femme" /> <label for="femme">Femme</label>
+				</div>
+				<!-- -- -->
+				<div>
+					<input type="checkbox" id="femmle" />
+					<label for="femmle">Femmle</label>
+				</div>
+				<!-- -- -->
+
+				<hr />
+				<h4>ÉVALUATION CLIENTS</h4>
+
+				<div class="sta">
+					<input type="radio" name="stars" id="radioBtn" />
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<span>et plus</span>
+				</div>
+
+				<div class="sta">
+					<input type="radio" name="stars" id="radioBtn" />
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<span>et plus</span>
+				</div>
+
+				<div class="sta">
+					<input type="radio" name="stars" id="radioBtn" />
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<span>et plus</span>
+				</div>
+
+				<div class="sta">
+					<input type="radio" name="stars" id="radioBtn" />
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<span>et plus</span>
+				</div>
+
+				<hr />
+				<h4>Prix</h4>
+				<div class="rand">
+					<input type="range" min="4" max="100000" value="4" />
+				</div>
+				<div class="inp">
+					<input
+						type="number"
+						name="number"
+						id=""
+						min="1"
+						max="10000"
+						placeholder="min"
+						value="1"
+					/>
+					-
+					<input
+						type="number"
+						min="1000"
+						max="100000"
+						placeholder="max"
+						value="10000"
+					/>
+				</div>
+
+				<div class="taille">
+					<h4>Taille</h4>
+					<div><input type="checkbox" id="S" /> <label for="S">S</label></div>
+					<!-- -- -->
+					<div><input type="checkbox" id="L" /> <label for="L">L</label></div>
+					<!-- -- -->
+					<div><input type="checkbox" id="M" /> <label for="M">M</label></div>
+					<!-- -- -->
+					<div>
+						<input type="checkbox" id="XL" />
+						<label for="XL">XL</label>
+					</div>
+					<div>
+						<input type="checkbox" id="XXL" />
+						<label for="XXL">XXL</label>
+					</div>
+					<div>
+						<input type="checkbox" id="XXXL" />
+						<label for="XXXL">XXXL</label>
+					</div>
+					<!-- -- -->
+				</div>
+			</div>
+			<div class="cat-col-2">
+				<div class="product-list hidden flex">
+					<img src="./image/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./image/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./image/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./image/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./image/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./image/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./image/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- -------End SEction Product And Ctégorie------------ -->
 		<!-- Start Riview and Blogs -->
 		<section class="section hidden" id="section">
 			<div class="container">
@@ -2366,54 +2713,8 @@
 				</div>
 			</div>
 		</section>
-		<article class="article hidden">
-			<div class="container">
-				<div class="about-we">
-					<div class="info-we">
-						<div class="icon">
-							<i class="fas fa-quote-left"></i>
-							<i class="fas fa-quote-right"></i>
-						</div>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-							voluptates quibusdam, cupiditate incidunt doloribus nisi commodi
-							iste debitis laboriosam eligendi reiciendis! Nihil sequi animi
-							facilis molestiae repellendus eos ratione doloremque.
-						</p>
+		
 
-						<h3>"Elorchi Brahim"</h3>
-					</div>
-					<div class="info-we">
-						<div class="icon">
-							<i class="fas fa-quote-left"></i>
-							<i class="fas fa-quote-right"></i>
-						</div>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-							voluptates quibusdam, cupiditate incidunt doloribus nisi commodi
-							iste debitis laboriosam eligendi reiciendis! Nihil sequi animi
-							facilis molestiae repellendus eos ratione doloremque.
-						</p>
-
-						<h3>"Elorchi Brahim"</h3>
-					</div>
-					<div class="info-we">
-						<div class="icon">
-							<i class="fas fa-quote-left"></i>
-							<i class="fas fa-quote-right"></i>
-						</div>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-							voluptates quibusdam, cupiditate incidunt doloribus nisi commodi
-							iste debitis laboriosam eligendi reiciendis! Nihil sequi animi
-							facilis molestiae repellendus eos ratione doloremque.
-						</p>
-
-						<h3>"Elorchi Brahim"</h3>
-					</div>
-				</div>
-			</div>
-		</article>
 		<!-- Start Footer -->
 		<footer class="footer hidden" id="footer">
 			<div class="container">
@@ -2504,10 +2805,20 @@
 						<p>Copyright &copy; 2022 Made By Elorchi Brahim</p>
 					</div>
 					<div class="footer-icons">
-						<a href=""><i class="fab fa-facebook"></i></a>
-						<a href=""><i class="fab fa-whatsapp"></i></a>
-						<a href=""><i class="fab fa-linkedin"></i></a>
-						<a href="https://github.com/B-elorchi">
+						<a
+							href="https://www.facebook.com/profile.php?id=100076437191234"
+							target="_blank"
+							><i class="fab fa-facebook"></i
+						></a>
+						<a href=" https://wa.me/+212608986772" target="_blank"
+							><i class="fab fa-whatsapp" target="_blank"></i
+						></a>
+						<a
+							href="https://www.linkedin.com/in/brahim-elorchi-38aa921b3/"
+							target="_blank"
+							><i class="fab fa-linkedin"></i
+						></a>
+						<a href="https://github.com/B-elorchi" target="_blank">
 							<i class="fab fa-github"></i
 						></a>
 					</div>
@@ -2519,7 +2830,38 @@
 			</div>
 		</footer>
 		<!-- End Footer -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<!-- Custom Js File -->
+		<script>
+			$(document).ready(() => {
+				$("#customers-testimonials").owlCarousel = {
+					loop: true,
+					center: true,
+					items: 3,
+					margin: 0,
+					autoplay: true,
+					dots: true,
+					autoplayTimeout: 8500,
+					smartSpeed: 450,
+					responsive: {
+						0: {
+							items: 1,
+						},
+						768: {
+							items: 2,
+						},
+						1170: {
+							items: 3,
+						},
+					},
+				};
+			});
+		</script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

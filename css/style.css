@@ -13,14 +13,37 @@
 	margin: 0%;
 	padding: 0%;
 }
+html{
+	scroll-behavior: smooth;
+}
 body {
-	background-color: white;
+	background-color: #fff;
 }
-.container {
-	width: 1170px;
-	padding: 0 15px;
-	margin: auto;
+.to-top{
+	display: none;
 }
+.container{
+	width: 1173px;
+	margin: 0 auto;
+}
+.fa-angle-double-up{
+	position: fixed;
+    bottom: 10%;
+    font-size: 30px;
+    right: 5%;
+    z-index: 10000;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+	cursor: pointer;
+	transition: var(--main-transition);
+	animation: move-top 1s 1s linear infinite;
+}
+
 a {
 	text-decoration: none;
 	color: black;
@@ -219,6 +242,52 @@ ul {
 	background-color: white;
 	color: black;
 }
+/* -------------------------Start Media Query -------------------------*/
+@media (max-width:768px) {
+	.search-box{
+		display: none !important;
+	}
+}
+@media (max-width:600px) {
+	.container{
+		width: 100%;
+		padding: 1%;
+	}
+	.header{
+		display: none !important;
+	}
+	.logo{
+		font-size: 12px;
+	}
+	.wish-list{
+		display: none !important;
+	}
+	.header-icons i{
+		font-size: 14px !important;
+	}
+	.shop-card i{
+		font-size: 14px !important;
+	}
+	.header-munu{
+		display: none !important;
+	}
+	/* --------- */
+	.main-footer {
+    background-color: var(--alt-color-black);
+    height: fit-content !important;
+    padding: 20px;
+	}
+	.box-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 40px;
+}
+}
+/*------------------------- end Media Query -------------------------*/
 /*--------------------- Start Acount ---------------------*/
 /* my acount */
 .myacount {
@@ -243,7 +312,15 @@ ul {
 	top: -20px;
 	right: -8px;
 	font-size: 35px;
+	background-color: #060606;
+	width: 40px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
 	cursor: pointer;
+	color: white;
+	border: 3px solid white;
 }
 .myacount input {
 	border: none;
@@ -327,9 +404,11 @@ form {
 }
 .register .gender input[type="radio"] {
 	width: 20px;
+	cursor: pointer;
 }
 .register .gender label {
 	margin-left: -30px;
+	cursor: pointer;
 }
 .register input[type="submit"] {
 	border: 1px solid black;
@@ -357,12 +436,13 @@ form {
 	text-decoration: underline;
 	color: blue;
 	margin: 10px;
+	cursor: pointer;
 }
 .active {
 	top: 50%;
 	z-index: 1000;
 }
-/*--------------------- End Register ---------------------*/
+/*--------------------- End Register ---------------------*/v
 /* -------------End Header-------------- */
 /* -------------Start Section Main-------------- */
 .main-section {
@@ -377,6 +457,11 @@ form {
 	width: 105%;
 	height: 100%;
 }
+.main-section .product-silder {
+	display: flex;
+    margin: 30px auto;
+    justify-content: space-between;
+}
 .main-section .slider-image .info-box {
 	width: 85%;
 	height: 100%;
@@ -389,21 +474,29 @@ form {
 	position: absolute;
 }
 .main-section .slider-image .info-box a.shop-now {
-	border: 1px solid black;
-	padding: 10px;
+	border: 0.6px solid black;
+	padding: 10px 15px;
 	transition: var(--main-transition);
 	border-radius: 5px;
+	width: 135px;
+	position: absolute;
+	left: 30%;
 }
-.main-section .slider-image .info-box a.shop-now i {
-	margin-left: 5px;
+
+.main-section .slider-image .info-box i.fa-arrow-right {
+	position: absolute;
+	right: 85px;
+	top: 170px;
+	animation: move-left 1s 1s linear infinite;
+	color: var(--hot-color);
+	padding-left: 5px;
 }
+
 .main-section .slider-image .info-box a.shop-now:hover {
 	background-color: var(--main-color);
 	color: white;
 }
-.main-section .slider-image .info-box a.shop-now:hover i {
-	animation: move-left 1s 0s linear infinite;
-}
+
 .main-section .slider-image .info-box .box p {
 	margin-bottom: 30px;
 	line-height: 1.5;
@@ -708,7 +801,7 @@ form {
 	background-color: white;
 	margin-top: 20px;
 	margin-bottom: 50px;
-	border: 2px solid;
+	/* border: 2px solid; */
 	border-radius: 5px;
 	cursor: pointer;
 	transition: var(--main-transition);
@@ -736,7 +829,7 @@ form {
 }
 
 .product-box .item-info .info {
-	border-top: 2px solid;
+	/* border-top: 2px solid; */
 	margin-top: -4px;
 	padding: 5px;
 }
@@ -844,6 +937,151 @@ form {
 	font-family: fantasy;
 }
 /* End Section Riview and Blogs */
+/* Start SEction Product And Ctégorie */
+.product-categorie {
+	padding: 30px 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	background-color: #eee;
+}
+.product-categorie .cat-col-1 {
+	width: 250px;
+	/* border: 1px solid; */
+	padding: 15px 8px;
+	background-color: white;
+	box-shadow: 0px 0px 3px grey;
+	border-radius: 10px;
+	height: fit-content;
+}
+.product-categorie .cat-col-1 h4 {
+	padding: 5px;
+}
+.product-categorie .cat-col-1 ul {
+	padding: 10px;
+}
+.product-categorie .cat-col-1 ul li {
+	padding: 10px 50px;
+	width: 135%;
+	margin-left: -37px;
+	transition: var(--main-transition);
+}
+.product-categorie .cat-col-1 ul li:hover {
+	background-color: #eee;
+	transform: translateX(2%);
+}
+.product-categorie .cat-col-1 div {
+	padding: 10px 20px;
+}
+.product-categorie .cat-col-1 .sta {
+	color: #fed430;
+}
+.product-categorie .cat-col-1 .inp {
+	display: flex;
+}
+.product-categorie .cat-col-1 .rand {
+	text-align: center;
+}
+.product-categorie .cat-col-2 {
+	flex: 2;
+	margin-left: 85px;
+}
+.cat-col-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.cat-col-2 .product-list {
+	border: 1px solid #484747;
+	height: fit-content;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: white;
+	border-radius: 10px;
+	transition: var(--main-transition);
+	cursor: pointer;
+	justify-content: flex-start;
+}
+.cat-col-2 .product-list:hover {
+	transform: scale(1.01);
+	box-shadow: 0px 2px 5px #484747;
+}
+.cat-col-2 .product-list img {
+	width: 200px;
+	height: 250px;
+	flex: .3;
+}
+.cat-col-2 .product-list .info {
+	flex: 0.6;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	width: 50%;
+}
+.cat-col-2 .product-list .info h4 {
+	font-size: 22px;
+	font-weight: initial;
+}
+.cat-col-2 .product-list .info p {
+	color: #000000a6;
+	line-height: 1.4;
+	font-family: cursive;
+}
+.cat-col-2 .product-list .info .starts {
+	color: #fed430;
+}
+.cat-col-2 .product-list .add-cart {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-right: 50px;
+}
+.cat-col-2 .product-list .add-cart input {
+	width: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+.cat-col-2 .product-list .add-cart button {
+	position: absolute;
+	bottom: 12px;
+	border: 1px solid;
+	padding: 10px 70px;
+	right: 35px;
+	border-radius: 5px;
+	font-family: cursive;
+	font-weight: bold;
+	background-color: var(--main-color);
+	color: white;
+	transition: 0.6s;
+}
+.cat-col-2 .product-list .add-cart button:hover {
+	background-color: white;
+	color: var(--main-color);
+}
+.cat-col-2 .product-list .add-cart .newPri {
+	font-weight: bold;
+	font-size: x-large;
+	font-family: cursive;
+}
+
+.cat-col-2 .product-list .add-cart .new span:first-child {
+	text-decoration: line-through;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.cat-col-2 .product-list .add-cart .new span:last-child {
+	padding: 5px;
+	background-color: #ffa5004d;
+	border-radius: 5px;
+	color: orange;
+}
+.cat-col-2 .product-list {
+}
+/* End SEction Product And Ctégorie */
 /* Start Brand */
 .brand {
 	margin: 20px 0;
@@ -894,41 +1132,10 @@ form {
 	left: -2px;
 	bottom: -35px;
 }
-.article .about-we {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	gap: 30px;
-}
-.article .about-we .info-we {
-	width: 400px;
-	text-align: center;
-	border: 4px solid var(--main-color);
-	padding: 30px 20px;
-	border-radius: 20px;
-	transition: var(--main-transition);
-}
-.article .about-we .info-we:hover {
-	transform: translateY(-10px);
-	box-shadow: 5px 3px 5px var(--main-color);
-}
-
-.article .about-we .info-we p {
-	font-weight: bold;
-	line-height: 2.3;
-	font-family: cursive;
-}
-.article .about-we .info-we h3 {
-	margin-top: 35px;
-	font-size: 30px;
-	font-family: monospace;
-	color: var(--main-color-alt);
-}
-.article .about-we .info-we .icon {
-	font-size: 50px;
-	margin-bottom: 25px;
-	color: var(--hot-color);
-}
+/* --------------- */
+/* -------------------Start Riview and Spenser----------- */
+ 
+/* -------------------End Riview and Spenser----------- */
 /* End Brand */
 /* Start Section Footer */
 .footer {
@@ -1165,7 +1372,29 @@ form {
 		transform: translateX(0px);
 	}
 }
+@keyframes move-top {
+	0% {
+		transform: translateY(5px);
+	}
 
+	10% {
+		transform: translateY(0px);
+	}
+	30% {
+		transform: translateY(5px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	60% {
+		transform: translateY(5px);
+	}
+	80% {
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
 @keyframes scale {
 	0% {
 		transform: scale(1);
@@ -1188,4 +1417,74 @@ form {
 	100% {
 		transform: scale(1.13);
 	}
+}
+
+/* Over lay */
+.over-lay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #555c;
+	z-index: 1000;
+}
+.popus-ads {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1002;
+	width: 400px;
+	height: fit-content;
+	padding: 50px 15px;
+	background-color: white;
+	text-align: center;
+	border-radius: 50px 0 50px 50px;
+}
+.popus-ads .fa-close {
+	position: absolute;
+	background-color: white;
+	top: -13px;
+	right: -19px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	line-height: 43px;
+	border-radius: 50%;
+	color: black !important;
+	border: 5px solid #555c;
+}
+.popus-ads button {
+	height: 40px;
+	border-radius: 10px;
+	padding: 4px 25px;
+	margin-left: 5px;
+	font-family: cursive;
+	font-weight: bold;
+	background-color: var(--main-color);
+	color: white;
+	border: 1px solid;
+	cursor: pointer;
+	transition: var(--main-transition);
+}
+.popus-ads button:hover {
+	color: var(--main-color);
+	background-color: white;
+}
+.popus-heding {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	padding-bottom: 30px;
+	font-size: 25px;
+	font-family: cursive;
+}
+.popus-input {
+	width: 70%;
+	height: 40px;
+	border-radius: 9px;
+	font-family: "Courier New", Courier, monospace;
+	outline: none;
+	padding-left: 5px;
 }
